@@ -9,7 +9,7 @@ function LinkTiles() {
       <div className="flex border-b h-16 w-full items-center justify-center">
         <p className="text-sm text-gray-400">Quick Access</p>
       </div>
-      <nav className="flex w-full md:flex-wrap flex-col p-4">
+      <nav className="flex flex-col md:flex-row w-full md:flex-wrap p-4">
         <div
           role="button"
           className="text-slate-800 flex w-full md:w-1/2 items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"

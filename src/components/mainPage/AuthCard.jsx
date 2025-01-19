@@ -13,7 +13,7 @@ function AuthCard() {
           </div>
           <div className="flex h-1/3">
             <div className="flex h-full w-full items-center justify-center">
-              <p className="text-gray-600 text-">
+              <p className="text-gray-600 md:text-lg text-xs">
                 Already user ?{" "}
                 <span className="text-gray-500 font-bold"> Login</span>
               </p>
@@ -30,7 +30,7 @@ function AuthCard() {
           </div>
           <div className="flex h-1/3">
             <div className="flex h-full w-full items-center justify-center">
-              <p className="text-gray-600 text-">
+              <p className="text-gray-600 md:text-lg text-xs">
                New User ?{" "}
                 <span className="text-gray-500 font-bold"> Register</span>
               </p>
