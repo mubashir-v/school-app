@@ -30,7 +30,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.SERVER_HOST }} # Remote server's IP address
           REMOTE_USER: ${{ secrets.SERVER_USERNAME }} # Remote server's username
           SOURCE: dist/ # Path to the build directory
-          TARGET: /var/www/pressmaster_frontend/dist/ # Remote deployment directory
+          TARGET: /var/www/school-app/dist/ # Remote deployment directory
       - name: Realod nginx
         uses: appleboy/ssh-action@master
         with:
