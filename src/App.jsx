@@ -10,7 +10,7 @@ import Vision from "./pages/Vision";
 import Schools from "./pages/Schools";
 import Students from "./pages/Students";
 import Help from "./pages/Help";
-import Donate from "./pages/DOnate";
+import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 
 function App() {
