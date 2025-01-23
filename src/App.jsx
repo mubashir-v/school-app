@@ -1,4 +1,3 @@
-
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -12,44 +11,48 @@ import Students from "./pages/Students";
 import Help from "./pages/Help";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import PreRegister from "./pages/PreRegister";
 
 function App() {
   const router = createHashRouter([
+    { path: "/login", element: <Login /> },
+    { path: "/register", element: <PreRegister /> },
     {
       path: "/",
       element: <RootLayout />,
       children: [
         {
           path: "/",
-          element: <MainPage/>,
+          element: <MainPage />,
         },
         {
           path: "/about",
-          element: <AboutUs/>,
+          element: <AboutUs />,
         },
         {
           path: "/vision",
-          element: <Vision/>,
+          element: <Vision />,
         },
         {
           path: "/schools",
-          element: <Schools/>,
+          element: <Schools />,
         },
         {
           path: "/students",
-          element: <Students/>,
+          element: <Students />,
         },
         {
           path: "/help",
-          element: <Help/>,
+          element: <Help />,
         },
         {
           path: "/donate",
-          element: <Donate/>,
+          element: <Donate />,
         },
         {
           path: "/contact",
-          element: <Contact/>,
+          element: <Contact />,
         },
       ],
     },
