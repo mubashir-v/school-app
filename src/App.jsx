@@ -14,12 +14,14 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import PreRegister from "./pages/PreRegister";
 import SchoolRegister from "./pages/SchoolRegister";
+import VolunteerRegister from "./pages/VolunteerRegister";
 
 function App() {
   const router = createHashRouter([
     { path: "/login", element: <Login /> },
     { path: "/register", element: <PreRegister /> },
     { path: "/school-register", element: <SchoolRegister /> },
+    { path: "/volunteer-register", element: <VolunteerRegister /> },
     {
       path: "/",
       element: <RootLayout />,
