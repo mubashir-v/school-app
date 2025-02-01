@@ -4,7 +4,7 @@ function GiveBack() {
   return (
     <div className="flex h-full w-full items-center justify-center border rounded-lg bg-white">
       <div className="flex h-full w-full p-2">
-        <div className="flex flex-col items-center w-full  rounded-lg border p-2">
+        <div className="flex flex-col items-center w-full  rounded-lg border p-2 overflow-scroll scrollbar-hidden">
           <div className="flex w-full justify-center rounded items-center p-3">
             <VscFeedback className="text-5xl" />
           </div>

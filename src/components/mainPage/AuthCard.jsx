@@ -18,7 +18,6 @@ function AuthCard() {
           <div className="flex h-1/3">
             <div className="flex h-full w-full items-center justify-center">
               <p className="text-gray-600 md:text-lg text-xs">
-                Already user ?{" "}
                 <span className="text-gray-500 font-bold"> Login</span>
               </p>
             </div>
@@ -33,9 +32,9 @@ function AuthCard() {
             </div>
           </div>
           <div className="flex h-1/3">
-            <div className="flex h-full w-full items-center justify-center">
-              <p className="text-gray-600 md:text-lg text-xs">
-                New User ?{" "}
+            <div className="flex h-full w-full items-center p-2 justify-center">
+              <p className="text-gray-600 md:text-sm text-center text-xs">
+                New School / Volunteer  ?{" "}
                 <span className="text-gray-500 font-bold"> Register</span>
               </p>
             </div>
