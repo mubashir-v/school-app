@@ -16,6 +16,7 @@ import PreRegister from "./pages/PreRegister";
 import SchoolRegister from "./pages/SchoolRegister";
 import VolunteerRegister from "./pages/VolunteerRegister";
 import Volunteers from "./pages/Volunteers";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   const router = createHashRouter([
@@ -27,46 +28,24 @@ function App() {
       path: "/",
       element: <RootLayout />,
       children: [
-        {
-          path: "/",
-          element: <MainPage />,
-        },
-        {
-          path: "/about",
-          element: <AboutUs />,
-        },
-        {
-          path: "/vision",
-          element: <Vision />,
-        },
-        {
-          path: "/schools",
-          element: <Schools />,
-        },
-        {
-          path: "/students",
-          element: <Students />,
-        },
-        {
-          path: "/help",
-          element: <Help />,
-        },
-        {
-          path: "/donate",
-          element: <Donate />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
-        {
-          path: "/volunteers",
-          element: <Volunteers />,
-        },
+        { path: "/", element: <MainPage /> },
+        { path: "/about", element: <AboutUs /> },
+        { path: "/vision", element: <Vision /> },
+        { path: "/schools", element: <Schools /> },
+        { path: "/students", element: <Students /> },
+        { path: "/help", element: <Help /> },
+        { path: "/donate", element: <Donate /> },
+        { path: "/contact", element: <Contact /> },
+        { path: "/volunteers", element: <Volunteers /> },
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+
+  return (
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+  );
 }
 
 export default App;
