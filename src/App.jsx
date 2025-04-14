@@ -15,6 +15,7 @@ import Login from "./pages/Login";
 import PreRegister from "./pages/PreRegister";
 import SchoolRegister from "./pages/SchoolRegister";
 import VolunteerRegister from "./pages/VolunteerRegister";
+import Volunteers from "./pages/Volunteers";
 
 function App() {
   const router = createHashRouter([
@@ -57,6 +58,10 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/volunteers",
+          element: <Volunteers />,
         },
       ],
     },

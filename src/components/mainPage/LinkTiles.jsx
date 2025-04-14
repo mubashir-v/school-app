@@ -3,6 +3,7 @@ import { MdVolunteerActivism } from "react-icons/md";
 import { Gi3dStairs } from "react-icons/gi";
 import { LiaSchoolSolid } from "react-icons/lia";
 import { CiLink } from "react-icons/ci";
+import { Link } from "react-router-dom";
 function LinkTiles() {
   return (
     <div className="flex flex-col bg-white shadow-md border rounded-lg w-full h-full p-2 overflow-scroll items-center">
@@ -22,7 +23,7 @@ function LinkTiles() {
             <p className="text-slate-500 text-sm">Explore Our Mission</p>
           </div>
         </div>
-        <div
+        <Link to={"/volunteers"}
           role="button"
           className="text-slate-800 flex w-full md:w-1/2 items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
         >
@@ -35,7 +36,7 @@ function LinkTiles() {
               Join the Volunteer Comunity
             </p>
           </div>
-        </div>
+        </Link>
         <div
           role="button"
           className="text-slate-800 flex w-full md:w-1/2 items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
