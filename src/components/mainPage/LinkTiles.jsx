@@ -33,11 +33,11 @@ function LinkTiles() {
           <div>
             <h6 className="text-slate-800 font-medium">Volunteer</h6>
             <p className="text-slate-500 text-sm">
-              Join the Volunteer Comunity
+              Volunteer Dashboard
             </p>
           </div>
         </Link>
-        <div
+        <Link to={'/schools'}
           role="button"
           className="text-slate-800 flex w-full md:w-1/2 items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
         >
@@ -45,10 +45,10 @@ function LinkTiles() {
             <LiaSchoolSolid className="text-3xl" />
           </div>
           <div>
-            <h6 className="text-slate-800 font-medium">School</h6>
-            <p className="text-slate-500 text-sm">Enroll Schoool</p>
+            <h6 className="text-slate-800 font-medium">Schools</h6>
+            <p className="text-slate-500 text-sm">Enrolled Schools</p>
           </div>
-        </div>
+        </Link>
 
         <div
           role="button"
